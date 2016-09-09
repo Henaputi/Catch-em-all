@@ -3,10 +3,21 @@
         <button menuToggle>
           <ion-icon name='menu'></ion-icon>
         </button>
-        <ion-title>Wiki</ion-title>
+        <!--ion-title>Wiki</ion-title-->
+        <ion-searchbar (input)="getItems($event)"></ion-searchbar>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+    <h1>Pokedex</h1>
+
+    <div class="list">
+
+          <a *ngFor="let item of pokemons">
+            <h2>{{item.name}}</h2>
+          </a>
+
+    </div>
 
 </ion-content>
