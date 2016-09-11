@@ -4,6 +4,7 @@ import { Nav } from 'ionic-angular';
 import { MapPage } from '../../pages/map/map';
 import { WikiPage } from '../../pages/wiki/wiki';
 import { AboutPage } from '../../pages/about/about';
+import { ImprintPage } from '../../pages/imprint/imprint';
 
 @Component({
   selector: 'nav-sidebar',
@@ -16,7 +17,8 @@ export class NavSidebar {
   pages = [
     {name: 'Map', link: MapPage},
     {name: 'Wiki', link: WikiPage},
-    {name: 'About',link: AboutPage}
+    {name: 'About',link: AboutPage},
+    {name: 'Imprint',link: ImprintPage}
   ];
 
   openPage(page) {
